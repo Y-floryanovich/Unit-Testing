@@ -43,7 +43,7 @@ namespace UnitTestingTests
         [Test]
         public void GetStatistics_ShouldReturnAverage_ReturnRightAverage()
         {
-            var input = new List<int> { 1, 2, 3, 4, 4, 4 };
+            var input = new List<int> { 1, 3, 4, 4, 4 };
             var expectedResult = 6;
 
             var result = CalcStats.GenerateCalcStats(input);
