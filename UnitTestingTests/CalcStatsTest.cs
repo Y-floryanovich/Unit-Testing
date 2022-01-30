@@ -54,7 +54,7 @@ namespace UnitTestingTests
         [Test]
         public void GetStatistics_WhenListIsEmpty_ReturnNull()
         {
-            var input = new List<int> { 1, 3, 4, 4, 4 };
+            var input = new List<int>();
 
             var result = CalcStats.GenerateCalcStats(input);
 

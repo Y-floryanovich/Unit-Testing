@@ -10,6 +10,11 @@ namespace UnitTesting
     {
         public static List<string> GenerateCalcStats(List<int> numbers)
         {
+            if(numbers == null || numbers.Count == 0)
+            {
+                return null;
+            }
+
             var result = new List<string>(4);
             result.Add(numbers.Min().ToString());
             result.Add(numbers.Max().ToString());
