@@ -19,7 +19,7 @@ namespace UnitTestingTests
 
         [TestCase("1","1","2")]
         [TestCase("2","5","7")]
-        [TestCase("13", "67", "100")]
+        [TestCase("13", "87", "100")]
         public void Sum_WhenNumbersIsNatural_ReturnResultOfSum(string input1, string input2, string expectedResult)
         {
             var result = StringSum.Sum(input1, input2);
