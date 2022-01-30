@@ -4,6 +4,21 @@
     "C:\\.NET Basic\\Unit Testing\\UnitTestingTests\\UnitTestingTests.csproj": {}
   },
   "projects": {
+    "C:\\.NET Basic\\Unit Testing\\Unit Testing\\UnitTesting.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\.NET Basic\\Unit Testing\\Unit Testing\\UnitTesting.csproj",
+        "projectName": "UnitTesting",
+        "projectPath": "C:\\.NET Basic\\Unit Testing\\Unit Testing\\UnitTesting.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
     "C:\\.NET Basic\\Unit Testing\\UnitTestingTests\\UnitTestingTests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -33,7 +48,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\.NET Basic\\Unit Testing\\Unit Testing\\UnitTesting.csproj": {
+                "projectPath": "C:\\.NET Basic\\Unit Testing\\Unit Testing\\UnitTesting.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

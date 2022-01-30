@@ -1253,6 +1253,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "UnitTesting/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/UnitTesting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnitTesting.dll": {}
+        }
       }
     }
   },
@@ -4942,6 +4951,11 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "UnitTesting/1.0.0": {
+      "type": "project",
+      "path": "../Unit Testing/UnitTesting.csproj",
+      "msbuildProject": "../Unit Testing/UnitTesting.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4949,6 +4963,7 @@
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "NUnit >= 3.13.1",
       "NUnit3TestAdapter >= 3.17.0",
+      "UnitTesting >= 1.0.0",
       "coverlet.collector >= 3.0.2"
     ]
   },
@@ -4986,7 +5001,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\.NET Basic\\Unit Testing\\Unit Testing\\UnitTesting.csproj": {
+              "projectPath": "C:\\.NET Basic\\Unit Testing\\Unit Testing\\UnitTesting.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

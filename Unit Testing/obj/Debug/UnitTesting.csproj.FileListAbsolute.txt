@@ -1,0 +1,8 @@
+C:\.NET Basic\Unit Testing\Unit Testing\bin\Debug\Unit Testing.exe.config
+C:\.NET Basic\Unit Testing\Unit Testing\bin\Debug\Unit Testing.exe
+C:\.NET Basic\Unit Testing\Unit Testing\bin\Debug\Unit Testing.pdb
+C:\.NET Basic\Unit Testing\Unit Testing\obj\Debug\UnitTesting.csproj.AssemblyReference.cache
+C:\.NET Basic\Unit Testing\Unit Testing\obj\Debug\UnitTesting.csproj.SuggestedBindingRedirects.cache
+C:\.NET Basic\Unit Testing\Unit Testing\obj\Debug\UnitTesting.csproj.CoreCompileInputs.cache
+C:\.NET Basic\Unit Testing\Unit Testing\obj\Debug\Unit Testing.exe
+C:\.NET Basic\Unit Testing\Unit Testing\obj\Debug\Unit Testing.pdb
