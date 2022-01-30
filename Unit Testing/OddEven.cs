@@ -1,4 +1,6 @@
-﻿namespace UnitTesting
+﻿using System;
+
+namespace UnitTesting
 {
     public class OddEven
     {
@@ -12,13 +14,13 @@
 
             for (int i = 1; i < max + 1; i++)
             {
-                if(i == 1 || i == 2 || isPrime(i))
+                if(i == 1 || i == 2 || IsPrime(i))
                 {
                     result += "Prime,";
                     continue;
                 }
                 
-                if (i % 2 == 0)
+                if (IsEven(i))
                 {
                     result += "Even,";
                 }
@@ -31,16 +33,35 @@
             return result;
         }
 
-        public static bool isPrime(int n)
+        public static string GenerateSingleOddEven(int number)
         {
-            for (int i = 2; i < n; i++)
+            if (number == 1 || number == 2 || IsPrime(number))
             {
-                if (n % i == 0)
+                return "Prime";
+            }
+
+            if (IsEven(number))
+            {
+                return "Even";
+            }
+            else
+            {
+                return "Odd";
+            }
+        }
+
+        private static bool IsPrime(int number)
+        {
+            for (int i = 2; i < number; i++)
+            {
+                if (number % i == 0)
                 {
                     return false;
                 }
             }
             return true;
         }
+
+        private static bool IsEven(int number) => number >= 2 && number % 2 == 0;
     }
 }
