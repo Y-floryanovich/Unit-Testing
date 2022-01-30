@@ -49,5 +49,15 @@ namespace UnitTestingTests
 
             Assert.That(actual, Is.EqualTo(expected));
         }
+
+        [TestCase(19, "Prime")]
+        [TestCase(25, "Odd")]
+        [TestCase(36, "Even")]
+        public void GenerateSingleOddEven_GivenNumber_ReturnStringsWithPrimeAndEvenAndOddValue(int input, string expected)
+        {
+            var actual = OddEven.GenerateSingleOddEven(input);
+
+            Assert.That(actual, Is.EqualTo(expected));
+        }
     }
 }
