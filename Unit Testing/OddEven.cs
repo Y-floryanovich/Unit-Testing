@@ -14,20 +14,7 @@ namespace UnitTesting
 
             for (int i = 1; i < max + 1; i++)
             {
-                if(i == 1 || i == 2 || IsPrime(i))
-                {
-                    result += "Prime,";
-                    continue;
-                }
-                
-                if (IsEven(i))
-                {
-                    result += "Even,";
-                }
-                else
-                {
-                    result += "Odd,";
-                }
+              result += GenerateSingleOddEven(i) + ",";
             }
 
             return result;
